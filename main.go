@@ -45,7 +45,7 @@ type Channel struct {
 	WindowStats bool   `json:"windowstats"`
 }
 
-func main() {
+func main01() {
 	account := Account{
 		Email:    "rsj217@gmail.com",
 		password: "123456",
