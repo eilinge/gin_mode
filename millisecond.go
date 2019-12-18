@@ -16,10 +16,17 @@ func main02() {
 	fmt.Println("the time: float64", float64(tt))
 }
 
-func main() {
+func main05() {
 	ts := TimeNowString()
 	time.Sleep(1 * time.Second)
 	fmt.Println("the value: ", getDuration(ts)) // 0: the duration cannot less 1 second
+}
+
+func main06() {
+	ts := int64(time.Now().UnixNano() / (1000 * 1000)) // ms
+	time.Sleep(2 * time.Millisecond)
+	newSt := int64(time.Now().UnixNano() / (1000 * 1000)) // ms
+	fmt.Println("the durateion :", newSt-ts)
 }
 
 // get duration of time.Now().Sub(p.Time)
