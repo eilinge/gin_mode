@@ -9,7 +9,7 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-func main() {
+func main07() {
 	r := redisInit()
 	_, err := r.Get("delTaskIDkey").Result()
 	if err != nil {
